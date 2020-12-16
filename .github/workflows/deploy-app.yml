@@ -43,7 +43,7 @@ jobs:
         run: yarn build
         
       - name: Surge intsall
-        run: npm intsall -g surge
+        run: npm install -g surge
       - name: Deploy Website
         run: surge ./build bootcamp2020-react-app-sample1.surge.sh --token ${{secrets.SURGE_TOKEN}}
           
